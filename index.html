@@ -1,17 +1,26 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
+
 <head>
     <meta charset="UTF-8">
     <title>Weather Report</title>
+
     <link href="content/css/bootstrap.css" rel="stylesheet" />
     <link href="content/css/bootstrap-theme.min.css" rel="stylesheet" />
 </head>
+
 <body>
-    <script src="vendor/jquery-3.0.0.js"></script>
-    <script src="js/bootstrap.js"></script>   
+    <ng-include src="'app/layout/_layout.html'"></ng-include>
+
+    <script src="vendor/jquery-2.2.0.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="vendor/angular.js"></script>
     <script src="vendor/angular-route.js"></script>
     <script src="vendor/highcharts.js"></script>
+
+    <script src="app/app.module.js"></script>
+    <script src="app/layout/shell.module.js"></script>
+    <script src="app/layout/shell.ctrl.js"></script>
 </body>
 
 </html>
